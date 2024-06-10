@@ -1,12 +1,76 @@
 /* Include Tailwind CSS */
 @import "./styles/tailwind.css";
 
+/* img {
+  width: 100%;
+} */
+
 .eddyNav {
-  @apply  px-6 mx-auto max-w-[400px] md:max-w-[1150px];
+  @apply px-6 mx-auto max-w-[400px] md:max-w-[1150px];
 }
 .eddyContainer {
-  @apply  px-3 mx-auto max-w-[400px] md:max-w-[1000px];
+  @apply px-3 mx-auto max-w-[400px] md:max-w-[1000px];
 }
-.fit-content{
+.eddyContainerFull {
+  @apply px-3 mx-auto max-w-[600px] md:max-w-[1200px];
+}
+.fit-content {
   width: fit-content;
+}
+
+.slanted-border {
+  transform: skewY(-2deg); /* Adjust the angle to control the slant degree */
+  transform-origin: top left;
+}
+
+.slanted-border-null {
+  transform: skewY(2deg); /* Adjust the angle to control the slant degree */
+  transform-origin: top left;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% - 120%)); /* Adjust based on icon width */
+  }
+}
+@keyframes slideInR {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% - 100%)); /* Adjust based on icon width */
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% + 180%)); /* Adjust based on icon width */
+  }
+}
+@keyframes slideOutR {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(100% - 100%)); /* Adjust based on icon width */
+  }
+}
+
+.text-slide {
+  animation: slideIn 0.5s forwards;
+}
+.text-slide-return {
+  animation: slideInR 0.5s forwards;
+}
+
+.text-slide-out {
+  animation: slideOut 0.5s forwards;
+}
+.text-slide-out-return {
+  animation: slideOutR 0.5s forwards;
 }
