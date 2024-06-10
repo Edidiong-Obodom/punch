@@ -1,13 +1,12 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* Include Tailwind CSS */
+@import "./styles/tailwind.css";
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.eddyNav {
+  @apply  px-6 mx-auto max-w-[400px] md:max-w-[1150px];
+}
+.eddyContainer {
+  @apply  px-3 mx-auto max-w-[400px] md:max-w-[1000px];
+}
+.fit-content{
+  width: fit-content;
 }
