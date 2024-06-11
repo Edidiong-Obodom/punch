@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Steps from "./steps";
+import { MOCK_STEPS } from "../../utilities/mock_data";
 
 const InGoodHands = () => {
+  const [open, setOpen] = useState("");
+
+  useEffect(() => {
+    setOpen(MOCK_STEPS[0].id);
+  }, []);
   return (
-    <div className="mt-16 md:mt-24 eddyContainerFull pb-8">
+    <section className="mt-16 md:mt-24 eddyContainerFull pb-8">
       <div className="w-full flex flex-col md:flex-row">
         <div className="md:w-1/2">
           <div className="">
@@ -16,10 +23,23 @@ const InGoodHands = () => {
               skilled candidates so you can onboard them in a matter of days.
             </p>
           </div>
+
+          {MOCK_STEPS.map((data) => {
+            return (
+              <Steps
+                key={data.id}
+                id={data.id}
+                title={data.title}
+                details={data.details}
+                opened={open}
+                setOpen={setOpen}
+              />
+            );
+          })}
         </div>
         <div className="md:w-1/2"></div>
       </div>
-    </div>
+    </section>
   );
 };
 
