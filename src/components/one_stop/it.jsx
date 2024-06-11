@@ -11,7 +11,7 @@ import logoBlackRIcon from "../../assets/logo-black-r.svg";
 
 const It = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full mt-20">
+    <div className="flex flex-col md:flex-row w-full mt-16 md:mt-20">
       <div className="w-full md:w-1/2 py-6">
         <h1 className="text-[20px] max-w-[300px] font-semibold">
           Find Dev and IT professionals to scale your business.

@@ -6,7 +6,7 @@ import logoTransRIcon from "../../assets/logo-trans-r.svg";
 const OneStop = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <section className="bg-[#EDEFFF] slanted-border h-fit w-full mt-5 py-[8rem] md:py-[6rem]">
+    <section className="bg-[#EDEFFF] slanted-border h-fit w-full mt-5 py-[6rem]">
       <div className="flex flex-col h-fit items-center slanted-border-null eddyContainerFull">
         <h1 className="text-center w-fit font-[700] text-[26px] md:text-[45px] md:leading-[64px]">
           Your one-stop marketplace for finding
@@ -16,7 +16,7 @@ const OneStop = () => {
         </h1>
         <It />
         <Design />
-        <div className="flex flex-col-reverse md:flex-row w-full mt-20">
+        <div className="flex flex-col-reverse md:flex-row w-full mt-16 md:mt-20">
           <div className="w-full md:w-1/2 py-3 md:py-6 flex items-center cursor-pointer">
             <button
               type="button"

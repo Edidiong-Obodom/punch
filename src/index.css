@@ -60,6 +60,16 @@
     transform: translateX(calc(100% - 100%)); /* Adjust based on icon width */
   }
 }
+@keyframes changeBackgroundForJason {
+  0% {
+    background-color: #AF7CFF;
+  }
+  100% {
+    background-image: url('./assets/jason_makki.svg');
+    background-size: cover; /* This ensures the image covers the entire area */
+    background-position: center; /* This centers the image */
+  }
+}
 
 .text-slide {
   animation: slideIn 0.5s forwards;
@@ -73,4 +83,7 @@
 }
 .text-slide-out-return {
   animation: slideOutR 0.5s forwards;
+}
+.jasonHover {
+  animation: changeBackgroundForJason 1s forwards;
 }
