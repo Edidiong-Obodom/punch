@@ -11,7 +11,7 @@ const Navbar = () => {
     isOpen ? setIsOpen(false) : setIsOpen(true);
   };
   return (
-    <nav className="bg-[#525AA0] text-white eddyNav shadow-lg mt-8 h-[fit-content] py-4 md:h-[60px] rounded-2xl">
+    <nav className="bg-[#525AA0] text-white eddyNav shadow-lg md:mt-8 h-[fit-content] py-4 md:h-[60px] md:rounded-2xl">
       <div className="flex w-[100%] h-[100%] flex-row justify-between items-center">
         <div className="flex mr-4 w-[1/3] items-center gap-1">
           <img src={zwilt} alt="name" height="70" width="70" className="" />{" "}
