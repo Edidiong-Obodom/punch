@@ -27,6 +27,9 @@
   transform: skewY(2deg); /* Adjust the angle to control the slant degree */
   transform-origin: top left;
 }
+.half-background {
+    background: linear-gradient(to bottom, white 50%, #0C0C0C 50%);
+}
 
 @keyframes slideIn {
   0% {

@@ -5,7 +5,7 @@ import playIcon from "../../assets/play-white.svg";
 const Steps = ({ id, opened, title, details, setOpen }) => {
   return (
     <div
-      className={`w-full md:max-w-[460px] flex flex-col mt-7 px-4 py-4 border border-[#F0F0F0] rounded-md cursor-pointer ${
+      className={`w-full md:max-w-[460px] flex flex-col mt-2 px-4 py-4 border border-[#F0F0F0] rounded-md cursor-pointer ${
         id === opened ? "shadow-lg" : ""
       }`}
       onClick={() => setOpen(id)}

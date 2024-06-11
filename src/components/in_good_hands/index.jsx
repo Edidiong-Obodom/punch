@@ -17,7 +17,7 @@ const InGoodHands = () => {
               How we ensure you’re in good hands.
             </h1>
           </div>
-          <div className="mt-5 max-w-[480px]">
+          <div className="mt-5 mb-7 max-w-[480px]">
             <p>
               With our comprehensive screening process, we hand-pick highly
               skilled candidates so you can onboard them in a matter of days.
