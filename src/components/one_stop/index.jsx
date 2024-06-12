@@ -8,11 +8,8 @@ const OneStop = () => {
   return (
     <section className="bg-[#EDEFFF] slanted-border h-fit w-full mt-5 py-[6rem]">
       <div className="flex flex-col h-fit items-center slanted-border-null eddyContainerFull">
-        <h1 className="text-center w-fit font-[700] text-[26px] md:text-[45px] md:leading-[64px]">
-          Your one-stop marketplace for finding
-        </h1>
-        <h1 className="text-center w-fit font-[700] text-[26px] md:text-[45px] md:leading-[64px]">
-          the talent your business needs.
+        <h1 className="md:text-center max-w-[880px] font-[700] text-[26px] md:text-[45px] md:leading-[64px]">
+          Your one-stop marketplace for finding the talent your business needs.
         </h1>
         <It />
         <Design />

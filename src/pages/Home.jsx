@@ -7,6 +7,7 @@ import InGoodHands from "../components/in_good_hands";
 import Footer from "../components/footer";
 import Faqs from "../components/faqs";
 import WhyChooseCarousel from "../components/carousel";
+import StartYourJourney from "../components/start_your_journey";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <OneStop />
       <HowItWorks />
       <InGoodHands />
+      <StartYourJourney />
       <WhyChooseCarousel />
       <Faqs />
       <Footer />

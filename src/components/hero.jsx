@@ -36,18 +36,14 @@ const Hero = () => {
   return (
     <section className="mt-16 md:mt-32">
       <div className="eddyContainer flex flex-col items-center justify-center">
-        <h1 className="font-bold text-center text-[26px] md:text-[54px] md:leading-[64px]">
+        <h1 className="font-bold max-w-[700px] text-center text-[26px] md:text-[54px] md:leading-[64px]">
           Finding the right fit{" "}
           <img
             src={gif}
             alt="first gif"
             className="inline h-[2rem] w-[3rem] md:h-[3rem] md:w-[4.5rem]"
           />{" "}
-          has <span className="inline md:hidden">never been easier</span>
-        </h1>
-        <h1 className="hidden md:block font-bold text-[26px] md:text-[54px] leading-[64px]">
-          {" "}
-          never been easier
+          has <span className="">never been easier</span>
         </h1>
         <div className="w-[280px] md:w-[400px] xl:w-[582px] text-center mt-5">
           <p className="text-[18px] text-center md:text-[22px] text-[#202229] font-[400px] leading-7">
@@ -173,7 +169,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="w-full pt-16">
+      <div className="w-full flex justify-center pt-16 ">
         <img src={base} height="70" alt="base" />
       </div>
     </section>
