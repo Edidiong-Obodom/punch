@@ -6,8 +6,8 @@ import ConnectingPeople from "./connecting_people";
 
 const Footer = () => {
   return (
-    <section className="mt-20 text-white bg-[#0C0C0C]">
-      <div className="bg-white h-[100px] slanted-border"></div>
+    <section className="text-white bg-[#0C0C0C]">
+      <div className="bg-[#F3F3F3] h-[100px] slanted-border"></div>
       <div className="">
         <div className="slanted-border w-full mt-5 py-[3rem] md:mb-16">
           <div className="bg-[#525AA0] h-[300px] eddyContainerFull">

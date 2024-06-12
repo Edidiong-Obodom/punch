@@ -10,7 +10,7 @@ const Hero = () => {
     "bg-[#C7F4C2] h-[100%] font-[700] p-3 md:py-3 md:px-4 rounded-[15px]"
   );
   const [designStyle, setDesignStyle] = useState(
-    "font-[600px] py-3 md:py-3 md:px-4 ml-2 mr-2 mr md:ml-0 md:mr-0"
+    "font-[600] py-3 md:py-3 md:px-4 ml-2 mr-2 mr md:ml-0 md:mr-0"
   );
   const handleToggle = () => {
     isIt ? setIsIt(false) : setIsIt(true);
@@ -22,14 +22,14 @@ const Hero = () => {
         "bg-[#C7F4C2] h-[100%] font-[700] p-3 md:py-3 md:px-4 rounded-[15px]"
       );
       setDesignStyle(
-        "font-[600px] py-3 md:py-3 md:px-4 ml-2 mr-2 mr md:ml-0 md:mr-0"
+        "font-[600] py-3 md:py-3 md:px-4 ml-2 mr-2 mr md:ml-0 md:mr-0"
       );
     } else {
       setDesignStyle(
         "bg-[#C7F4C2] h-[100%] font-[700] p-3 md:py-3 md:px-4 rounded-[15px]"
       );
       setItStyle(
-        "font-[600px] py-3 md:py-3 md:px-4 ml-2 mr-2 mr md:ml-0 md:mr-0"
+        "font-[600] py-3 md:py-3 md:px-4 ml-2 mr-2 mr md:ml-0 md:mr-0"
       );
     }
   }, [isIt]);
@@ -79,7 +79,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-[280px] md:w-[582px] xl:w-[920px] bg-[#F8F8F8] flex flex-col justify-center items-center text-[14px] md:text-[16px] rounded-[15px] pt-4 pb-6 px-0 md:px-[40px] mt-8 md:mt-10">
+        <div className="w-[280px] md:w-[582px] xl:w-[920px] bg-[#F8F8F8] flex flex-col justify-center items-center text-[14px] md:text-[16px] rounded-[15px] pt-4 pb-6 px-0 md:px-[80px] mt-8 md:mt-10">
           <div className="text-[#202229] bg-[#F2F2F2] flex justify-around items-center rounded-[15px]">
             <button type="button" className={itStyle} onClick={handleToggle}>
               IT & Development

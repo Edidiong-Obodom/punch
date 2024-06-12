@@ -5,6 +5,7 @@ import OneStop from "../components/one_stop";
 import HowItWorks from "../components/how_it_works";
 import InGoodHands from "../components/in_good_hands";
 import Footer from "../components/footer";
+import Faqs from "../components/faqs";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <OneStop />
       <HowItWorks />
       <InGoodHands />
+      <Faqs />
       <Footer />
     </div>
   );
