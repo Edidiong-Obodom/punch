@@ -52,15 +52,15 @@ const Carousel = ({ images }) => {
                 </h1>
                 <ul className="mb-12 mt-6">
                   {image.list.map((list, i) => (
-                    <li key={i} className="mt-3">
+                    <li key={i} className="relative mt-3 flex">
                       <img
                         src={image.rectangle}
                         height="20"
                         width="20"
                         alt="rectangle"
-                        className="inline mr-3"
+                        className="inline absolute top-[0.6rem]"
                       />{" "}
-                      {list}
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="">{list}</span>
                     </li>
                   ))}
                 </ul>
