@@ -19,11 +19,11 @@ const Navbar = () => {
         </div>
         {/* Medium to big screens */}
         <div className="hidden md:flex flex-row space-x-7 text-[13px] w-[1/3]">
-          <div>Find Work</div>
-          <div>Find Talent</div>
-          <div>Articles</div>
-          <div>About Us</div>
-          <div>Contact Us</div>
+          <div className="cursor-pointer">Find Work</div>
+          <div className="cursor-pointer">Find Talent</div>
+          <div className="cursor-pointer">Articles</div>
+          <div className="cursor-pointer">About Us</div>
+          <div className="cursor-pointer">Contact Us</div>
         </div>
         <div className="hidden md:flex flex-row justify-between items-center w-[1/3] gap-4">
           <div className="text-[13px] cursor-pointer">Log In</div>
