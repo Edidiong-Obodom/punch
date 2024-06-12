@@ -1,3 +1,10 @@
+import purpleR from "../assets/RectanglePurple.svg";
+import yellowR from "../assets/RectangleYellow.svg";
+import greenR from "../assets/RectangleGreen.svg";
+import firstSlide from "../assets/firstSlide.svg";
+import secondSlide from "../assets/secondSlide.png";
+import thirdSlide from "../assets/thirdSlide.png";
+
 export const MOCK_STEPS = [
   {
     id: 1,
@@ -79,5 +86,41 @@ export const MOCKFAQs = [
     type: "",
     subType: "",
     question: "How much can I earn?",
+  },
+];
+
+export const MOCK_CAROUSEL_DATA = [
+  {
+    id: 1,
+    title: "Onboard without the risk.",
+    image: firstSlide,
+    list: [
+      "We pick the best for you to select.",
+      "Thousands of vetted candidates in dozens of categories.",
+      "Risk-free resource swapping for the best fit.",
+    ],
+    rectangle: purpleR,
+  },
+  {
+    id: 2,
+    title: "An open book.",
+    image: secondSlide,
+    list: [
+      "Easy and transparent one-to-one chat with candidates.",
+      "Simple and convenient payment methods.",
+      "Review past ratings.",
+    ],
+    rectangle: yellowR,
+  },
+  {
+    id: 3,
+    title: "Stay in the loop.",
+    image: thirdSlide,
+    list: [
+      "Track your staff activity down to every minute with screenshots.",
+      "Comprehensive timesheet data to process payments.",
+      "Create projects to organize and assign tasks more effectively.",
+    ],
+    rectangle: greenR,
   },
 ];

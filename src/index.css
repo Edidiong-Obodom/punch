@@ -14,6 +14,9 @@
 .eddyContainerFull {
   @apply px-3 mx-auto max-w-[600px] md:max-w-[1200px];
 }
+.half-background {
+  background: linear-gradient(to bottom, white 10%, #edefff 90%);
+}
 .fit-content {
   width: fit-content;
 }
@@ -62,10 +65,10 @@
 }
 @keyframes changeBackgroundForJason {
   0% {
-    background-color: #AF7CFF;
+    background-color: #af7cff;
   }
   100% {
-    background-image: url('./assets/jason_makki.svg');
+    background-image: url("./assets/jason_makki.svg");
     background-size: cover; /* This ensures the image covers the entire area */
     background-position: center; /* This centers the image */
   }
