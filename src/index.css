@@ -88,5 +88,5 @@
   animation: slideOutR 0.5s forwards;
 }
 .jasonHover {
-  animation: changeBackgroundForJason 1s forwards;
+  animation: changeBackgroundForJason 0.5s forwards;
 }

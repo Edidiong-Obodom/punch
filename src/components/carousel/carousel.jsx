@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import logoTransRIcon from "../../assets/logo-trans-r.svg";
+import AnimatedButton from "../animatedButton";
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
   const timeoutRef = useRef(null);
 
   const resetTimeout = () => {
@@ -60,40 +60,26 @@ const Carousel = ({ images }) => {
                         alt="rectangle"
                         className="inline absolute top-[0.6rem]"
                       />{" "}
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="">{list}</span>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <span className="">{list}</span>
                     </li>
                   ))}
                 </ul>
-                <button
-                  type="button"
-                  className={`h-[70px] w-full md:max-w-[250px] py-6 flex items-center cursor-pointer ${
-                    isHovered ? "bg-[#202229] rounded-[30px]" : ""
-                  }`}
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
-                >
-                  <div
-                    className={`bg-[#202229] h-[70px] w-[70px] rounded-[30px] flex items-center justify-center transition-all duration-500 ${
-                      isHovered ? "text-slide-out" : "text-slide-return"
-                    }`}
-                  >
-                    <img
-                      src={logoTransRIcon}
-                      height="20"
-                      width="20"
-                      alt="more"
-                    />
-                  </div>
-                  <h1
-                    className={`ml-3 text-[20px] font-semibold transition-all duration-500 ${
-                      isHovered
-                        ? "text-slide text-white"
-                        : "text-slide-out-return"
-                    }`}
-                  >
-                    Learn More
-                  </h1>
-                </button>
+                <AnimatedButton
+                  icon={logoTransRIcon}
+                  iconStyle={{ height: "20", width: "20", alt: "Learn more" }}
+                  iconDivStyle="bg-[#202229] h-[70px] w-[70px] rounded-[30px] flex items-center justify-center"
+                  text={"Learn More"}
+                  textStyle={{
+                    normalStyle: "ml-3 text-[20px] font-semibold",
+                    isHoveredStyle: "text-white",
+                  }}
+                  buttonStyle={{
+                    normalStyle:
+                      "h-[70px] w-full md:max-w-[250px] py-6 flex items-center",
+                    isHoveredStyle: "bg-[#202229] rounded-[30px]",
+                  }}
+                />
               </div>
               <img
                 src={image.image}
